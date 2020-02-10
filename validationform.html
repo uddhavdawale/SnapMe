@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script>
+        
+        function validation1()
+        {
+            
+        
+        var val1=document.getElementById("username");
+        var val2=document.getElementById("password");
+          //alert(val1+val2);
+          if(val1.value.trim()=="" || val2.value.trim()=="")
+          {
+            alert("Inalid input you entered");
+             return false;
+            
+          }
+          else if(val1.value==val2.value)
+          {
+            alert(" Username and password is not allowed ");
+             return false;
+          }
+          else
+          {
+            return true;
+          }
+        }
+
+    </script>
+</head>
+<body>
+    <form   onsubmit="return validation1()" action="basics.html">
+        
+        <input id="username" type="text" placeholder="enter id"  >
+     </br> 
+        <input  id="password" type="password" placeholder="enter password" > </br>
+        <button  type="submit" "> Submit</button>
+
+    </form>
+</body>
+</html>
